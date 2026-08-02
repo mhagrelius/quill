@@ -1,0 +1,15 @@
+[package]
+name = "quill"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.80"
+description = "A Markdown scanner that reports which characters are syntax"
+license = "GPL-3.0-or-later"
+
+[lib]
+name = "quill"
+path = "src/lib.rs"
+
+# None. The whole point of this crate is that it is pure logic over `&str` in
+# character offsets, so the apps that draw with it can each draw their own way.
+[dependencies]
